@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from './Home';
@@ -7,21 +7,23 @@ import NewFeeling from './NewFeeling';
 import Profile from './Profile';
 
 function App() {
+  const [user, setUser] = useState({})
+
   return (
     <div class="app-wrapper">
       <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route> 
-          <Route exact path="/LogIn">
-            <LogIn/>
-          </Route>
-          <Route exact path="/NewFeeling">
-            <NewFeeling/>
-          </Route>
-          <Route exact path="/Profile">
-            <Profile/>
-          </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/LogIn">
+          <LogIn setUser={setUser} />
+        </Route>
+        <Route exact path="/NewFeeling">
+          <NewFeeling />
+        </Route>
+        <Route exact path="/Profile">
+          <Profile />
+        </Route>
       </Switch>
     </div>
   );
