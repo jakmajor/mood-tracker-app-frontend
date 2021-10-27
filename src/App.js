@@ -16,10 +16,10 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/LogIn">
-          <LogIn setUser={setUser} />
+          <LogIn setUser={setUser} user={user} />
         </Route>
         <Route exact path="/NewFeeling">
-          <NewFeeling />
+          <NewFeeling user={user}/>
         </Route>
         <Route exact path="/Profile">
           <Profile />
