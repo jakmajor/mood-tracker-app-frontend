@@ -8,9 +8,7 @@ function NewFeeling() {
 const handleClick = (e) => {
 
 }
-    
-    
-    
+   
     return (
         <div>
             <button id="color_button_1" onClick={handleClick}>stuff1</button>
@@ -21,6 +19,6 @@ const handleClick = (e) => {
             <button id="color_button_6" onClick={handleClick}>stuff6</button>
         </div>
     );
-    }
-    
-    export default NewFeeling;
+}
+
+export default NewFeeling;
