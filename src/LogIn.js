@@ -39,6 +39,8 @@ function LogIn({setUser, user}) {
     );
 }
 
-// a whole lot of stuff
+
+// a lot of stuff
 
 export default LogIn;
+
