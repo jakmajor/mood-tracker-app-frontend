@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from "react";
 
-
-
 function NewFeeling({user}) {
     const [selectedColor, setSelectedColor] = useState("");
     const [text, setText] = useState("");
@@ -11,9 +9,8 @@ function NewFeeling({user}) {
         
     }
     
-
     const createFeelings = () => {
-    fetch(`http://localhost:9292/feelings/${user.id}`,{
+    fetch(`http://localhost:9292/feelings/${user.feeler.id}`,{
         method:"POST",
         headers:{
             "Content-Type" : "application/json"
@@ -24,7 +21,6 @@ function NewFeeling({user}) {
         }),
     })
     }
-
 
     return (
         <div>
