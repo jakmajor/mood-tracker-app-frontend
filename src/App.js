@@ -19,10 +19,10 @@ function App() {
           <LogIn setUser={setUser} user={user} />
         </Route>
         <Route exact path="/NewFeeling">
-          <NewFeeling user={user}/>
+          <NewFeeling user={user} setUser={setUser}/>
         </Route>
         <Route exact path="/Profile">
-          <Profile />
+          <Profile user={user} />
         </Route>
       </Switch>
     </div>

@@ -56,7 +56,7 @@ h1 {
   width: max-content;
 }
 
-input {
+input, textarea {
   border: 2px solid #262626;
   background-color: transparent !important;
   margin: 0px auto;
@@ -94,4 +94,35 @@ input {
   cursor: pointer;
 }
 
+.feelings-button {
+  border-radius: 100px;
+  width: 58px;
+  height: 58px;
+  border: 0px; 
+  margin-right: 10px;
+  cursor: pointer;
+}
 
+.feelings-button:hover {
+  opacity: .6;
+}
+
+.feelings-button.selected {
+  border: 2px solid #232323;
+}
+
+textarea {
+  max-width: 100%;
+  width: 91%; 
+  margin-right: auto;
+  margin-left: 0px;
+  min-height: 140px;
+}
+
+.filled-button {
+  background-color: #262626 !important;
+  color: white;
+  margin-right: auto;
+  margin-left: 0px;
+  cursor: pointer;
+}
