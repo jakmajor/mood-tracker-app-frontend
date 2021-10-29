@@ -17,7 +17,7 @@ function Profile({ user }) {
         <div className="floating-box-container">
             {user.feelings.slice(-30).map((feeling) =>
                 <div className="hover-box-wrapper">
-                    <div style={{ backgroundColor: `#${feeling.color}` }} className="feeling-box frosty-box frosty-box-background">
+                    <div style={{ backgroundColor: `#${feeling.color}`}} className="feeling-box frosty-box frosty-box-background">
                         <p className="feeling-date">{formatDate(feeling.created_at)}</p>
                         <p className="feeling-text">{feeling.text}</p>
                     </div>

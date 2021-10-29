@@ -12,7 +12,7 @@ function LogIn({setUser, user}) {
         let day = new Date(data.feelings[data.feelings.length - 1].created_at)
         let today = new Date()
         if (day.getDate() === today.getDate() && day.getFullYear() == today.getFullYear()) {
-            history.push('/NewFeeling') //profile
+            history.push('/Profile') //profile
         } else {
             history.push('/NewFeeling')
         }
