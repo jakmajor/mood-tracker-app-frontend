@@ -126,3 +126,55 @@ textarea {
   margin-left: 0px;
   cursor: pointer;
 }
+
+.floating-box-container {
+  max-width: 910px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feeling-box{
+  padding: 10px;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.feeling-text {
+  opacity: 0;
+  font-size: 8px;
+}
+
+.feeling-date {
+  opacity: 0;
+}
+
+
+.feeling-box:hover > .feeling-text {
+  opacity: 1;
+} 
+
+.feeling-box:hover > .feeling-date {
+  font-size: 6px;
+  opacity: 1;
+} 
+
+.hover-box-wrapper:hover {
+  transform: scale(2);
+  z-index: 1;
+}
+
+.hover-box-wrapper {
+  position: relative;
+}
+
+.frosty-box-background {
+  opacity: .8;
+}
+.frosty-box-front {
+  position: absolute;
+  top: 0px;
+}
